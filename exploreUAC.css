@@ -1325,4 +1325,7 @@ button.uac-custom-list-group-item {
   background-color: var(--black);
 }
 
+.app-container {
+  background-color: aqua;
+}
 /* End of Uac SOS Coordination*/
