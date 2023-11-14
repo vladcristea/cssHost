@@ -1,98 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.garmin.com/static.garmin.com/fonts/roboto-standard/roboto-standard.css');
 @import url('https://static.garmincdn.com/fonts/knockout/HCo_fonts.css');
+@import url('https://fonts.garmin.com/static.garmin.com/fonts/oswald/oswald.css');
 
 :root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Color Definitions */
   --black: #000;
+  --charcoal-black: #00000066;
   --white: #fff;
+  --dirty-white: #fffffff0;
   --alto: #d8d8d8;
   --mine-shaft: #323232;
   --boulder: #757575;
-  --silver-chalice: #9f9f9f;
   --malibu: #60cff6;
   --red: #eb1100;
   --red-solid: #ff0000;
   --light-gray: #a1a1a1;
   --gray: #898989;
   --silver: #bababa;
-  --emerald: #65d099;
+  --silver-chalice: #9f9f9f;
+  --dark-grey: #616161;
+  --aqua-blue: #6dcff6;
+  --light-blue: #9ee2fa;
   --light-orange: #ffc971;
-  --pink: #ff7384;
+  --emerald: #65d099;
+  --light-red: #ff7384;
+  --ash-gray: #d8d8d8;
+  --border-gray: #d9d9d9;
+  --dark-red: #920000;
+  --green: #2d6c30;
+  --candy-blue: #60cff6;
+  --dark-boulder: #646464;
+  --light-alto: #e1e1e1;
   --turquoise-blue: #67cde8;
-  --green: #bfd62f;
-  --dark-gray: #333333;
-  --dark-gray-lighter: #666666;
-  --quick-silver-gray: #999999;
+  /* End of Color Definitions */
 
-  --text-primary-color: var(--white);
-  --text-light-color: var(--white);
-  --text-link-color: var(--malibu);
-  --text-link-visited-color: var(--boulder);
-  --error-color: var(--red);
-  --required-color: var(--red-solid);
-
-  --form-controls-border-color: var(--alto);
-  --form-controls-background-color: var(--black);
-  --form-controls-disabled-text-color: var(--silver-chalice);
-  --form-controls-invalid-focus-color: #eb110040;
-  --form-control-checkbox-border-color: var(--black);
-  --form-control-checkbox-focus-color: #00000066;
-  --form-control-checkbox-checked-bkg-color: var(--black);
-  --form-control-checkbox-disabled-color: var(--alto);
-
-  --button-disabled-border-color: var(--mine-shaft);
-  --button-disabled-color: var(--mine-shaft);
-  --button-primary-border-color: var(--green);
-  --button-primary-bkg-color: var(--white);
-  --button-primary-disabled-bkg-color: var(--white);
-  --button-dark-border-color: var(--green);
-  --button-dark-bkg-color: var(--black);
-  --button-dark-disabled-bkg-color: var(--black);
-
+  /* Alerts Color Definitions */
   --alert-default-color: var(--black);
   --alert-default-text-color: var(--white);
-  --alert-info-color: var(--turquoise-blue);
+  --alert-info-color: var(--light-blue);
   --alert-success-color: var(--emerald);
   --alert-warning-color: var(--light-orange);
-  --alert-error-color: var(--pink);
+  --alert-error-color: var(--light-red);
   --alert-primary-text-color: var(--black);
+  /* Alerts Color Definitions */
 
-  --card-text-color: var(--white);
+  /* Loader Color Definitions */
+  --loader-color-dark: var(--black);
+  --loader-color-light: var(--white);
+  /* End of Loader Color Definitions */
+
+  /* Banners Color Definitions */
+  --banner-success-color: var(--candy-blue);
+  --banner-success-text-color: var(--black);
+  --banner-error-color: var(--dark-red);
+  --banner-error-text-color: var(--white);
+  /* End of Banners Color Definitions */
+
+  /* Buttons Color Definitions */
+  --button-disabled-color: var(--mine-shaft);
+  --button-primary-border-color: var(--black);
+  --button-primary-bkg-color: var(--white);
+  --button-dark-border-color: var(--black);
+  --button-dark-bkg-color: var(--black);
+  --button-dark-disabled-bkg-color: var(--black);
+  --button-primary-disabled-bkg-color-v2: var(--ash-gray);
+  --button-primary-disabled-border-color-v2: var(--ash-gray);
+  --button-disabled-bkg-color-v2: var(--border-gray);
+  --button-disabled-border-color-v2: var(--border-gray);
+  --button-primary-border-color: var(--black);
+  --button-light-blue-border-color-v2: var(--malibu);
+  --button-light-blue-bkg-color-v2: var(--malibu);
+  --toggle-button-border-color: var(--alto);
+  /* End of Buttons Color Definitions */
+
+  /* Chevron Color Definitions */
+
+  --chevron-bkg-color: var(--dirty-white);
+  --chevron-border-color: var(--dirty-white);
+
+  /* Chevron Color Definitions */
+
+  /* Card Color Definitions */
+  --card-text-color: var(--black);
   --card-border-color: var(--silver);
-  --card-selected-border-color: var(--white);
+  --here--suggestion-card-border-color: var(--border-gray);
+  --card-selected-border-color: var(--black);
+  /* End of Card Color Definitions */
 
+  /* Footer Color Definitions */
   --footer-bgk-color: var(--black);
+  --footer-text-color: var(--white);
+  /* End of Footer Color Definitions */
 
-  --root-font-family-knockout: 'Knockout 30', 'Roboto', sans-serif;
-  --root-font-family-roboto: 'Roboto', sans-serif;
+  /* Form Controls Color Definitions */
+  --form-controls-border-color: var(--alto);
+  --form-controls-background-color: var(--white);
+  --form-controls-disabled-text-color: var(--boulder);
+  --form-controls-checkbox-border-color: var(--black);
+  --form-controls-checkbox-focus-color: var(--charcoal-black);
+  --form-controls-checkbox-checked-bkg-color: var(--black);
+  --form-controls-input-with-dropdown-selection-color: var(--dark-boulder);
+  --form-controls-background-color-v2: var(--ash-gray);
+  --form-controls-border-color-v2: var(--ash-gray);
+  --form-controls-checkbox-disabled-color: var(--dark-grey);
+  --form-controls-invalid-focus-color-v2: var(--dark-red);
+  --form-controls-error-color-v2: var(--dark-red);
+  --form-controls-required-color-v2: var(--dark-red);
+  --form-controls-disabled-color-v2: var(--dark-grey);
+  /* End of Form Controls Color Definitions */
 
-  --font-weight-bold: 700;
-  --font-weight-medium: 500;
-  --font-weight-regular: 400;
+  /* Text Color Definitions */
+  --text-primary-color: var(--black);
+  --text-secondary-color: var(--alto);
+  --text-light-color: var(--white);
+  --text-success-color: var(--green);
+  --text-link-color-v2: var(--black);
+  --text-link-visited-color-v2: var(--black);
+  --text-error-color: var(--dark-red);
+  --text-disabled-color-v2: var(--dark-grey);
+  /* End of Text Color Definitions */
 
-  --font-size-h1: 2rem;
-  --font-size-h2: 1.5rem;
-  --font-size-h3: 1.25rem;
-  --font-size-body-large: 1rem;
-  --font-size-body-primary: 0.875rem;
-  --font-size-body-small: 0.75rem;
-  --font-size-btn-large: 1rem;
-  --font-size-btn-medium: 0.875rem;
-  --font-size-label-medium: 0.875rem;
-  --font-size-medium: 0.875rem;
-  --font-size-footer: 0.6875rem;
+  /* Fonts Definitions */
+  --root-font-family-knockout: 'Knockout 30';
+  --root-font-family-roboto: 'Roboto';
+  --root-font-family-oswald: 'Oswald';
+  /* End of Fonts Definitions */
 
-  --line-height-small: 14px;
-  --line-height-regular: 16px;
-  --line-height-h3: 20px;
-  --line-height-h2: 24px;
-  --line-height-h1: 32px;
-  --line-height-label: 19px;
+  /* Font Sizes */
+  --font-size-h1-v2: 2.5rem;
+  --font-size-h1-subtitle: 1.25rem;
+  --font-size-h1-mobile-v2: 2rem;
+  --font-size-h2-v2: 2rem;
+  --font-size-h2-mobile-v2: 1.5rem;
+  --font-size-h3-v2: 1.5rem;
+  --font-size-h4-v2: 1.25rem;
 
-  --icon-caret-down: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='16px' height='11px' viewBox='0 0 16 11' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EWeb/ Arrows / iOS Arrow Down%3C/title%3E%3Cdefs%3E%3Cpath d='M11.0988761,0.533333333 L12.8696624,2.30411967 L6.64033757,8.53333333 L12.8696624,14.762547 L11.0988761,16.5333333 L3.13033757,8.56479481 L3.16133757,8.53333333 L3.13033757,8.50187186 L11.0988761,0.533333333 Z' id='path-1'%3E%3C/path%3E%3C/defs%3E%3Cg id='Screens' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Theming/Pick-a-Country' transform='translate(-327.000000, -220.000000)'%3E%3Cg id='Group-2' transform='translate(16.000000, 202.000000)'%3E%3Cg id='-Arrows-/-iOS-Arrow-Down' transform='translate(311.000000, 15.000000)'%3E%3Cmask id='mask-2' fill='white'%3E%3Cuse xlink:href='%23path-1'%3E%3C/use%3E%3C/mask%3E%3Cuse id='iOS-Arrow-Down' fill='%23A6A6A6' transform='translate(8.000000, 8.533333) rotate(-90.000000) translate(-8.000000, -8.533333) ' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  --font-size-body-large-v2: 1rem;
+  --font-size-body-primary-v2: 0.875rem;
+  --font-size-body-small-v2: 0.75rem;
+  --font-size-body-medium-v2: 0.8rem;
+  --font-size-btn-large-v2: 1rem;
+  --font-size-btn-medium-v2: 0.875rem;
+  --font-size-label-medium-v2: 0.875rem;
+  --font-size-label-large-v2: 1rem;
+  --font-size-medium-v2: 0.875rem;
+  --font-size-footer-v2: 0.75rem;
+  /* End of Font Sizes */
+
+  /* Font Weights */
+  --font-weight-bold-v2: 700;
+  --font-weight-bold-medium-v2: 500;
+  --font-weight-medium-v2: 400;
+  --font-weight-regular-v2: 320;
+  /* End of Font Weights */
+
+  /* Line Heights */
+  --line-height-small-v2: 14px;
+  --line-height-medium: 18px;
+  --line-height-regular-v2: 19px;
+  --line-height-h3-v2: 24px;
+  --line-height-h2-v2: 32px;
+  --line-height-h1-v2: 48px;
+  --line-height-h1-subtitle: 24px;
+  --line-height-h4-v2: 20px;
+  --line-height-label-v2: 19px;
+  --line-height-h1-mobile-v2: 40px;
+  --line-height-h2-mobile-v2: 28.8px;
+  --line-height-body-primary-small-v2: 20px;
+  /* End of Line Heights */
+
+  /* SVG Icons */
+  --icon-chevron-down-v2: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3OCA0OC44Ij4KPHBhdGggZD0iTTM5LDIxbDI4LjMsMjcuOEw3OCwzOC41TDM5LDBMMCwzOC41bDEwLjcsMTAuMkwzOSwyMXoiLz4KPC9zdmc+');
+  --icon-chevron-up-v2: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3OCA0OC43NSI+CiAgPHBhdGggZD0iTTM5LDI3Ljc5LDEwLjczLDAsMCwxMC4yNCwzOSw0OC43NSw3OCwxMC4yNCw2Ny4yOCwwWiIgc3R5bGU9ImZpbGw6IzAwMCIvPgo8L3N2Zz4=');
+  --icon-chevron-down-grey-v2: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3OCA0OC43NSI+CiAgPHBhdGggZD0iTTM5LDI3Ljc5LDEwLjczLDAsMCwxMC4yNCwzOSw0OC43NSw3OCwxMC4yNCw2Ny4yOCwwWiIgc3R5bGU9ImZpbGw6Izc1NzU3NSIvPgo8L3N2Zz4=');
+  --icon-check-mark-v2: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTMuNjM2IiB2aWV3Qm94PSIwIDAgMTUgMTMuNjM2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik01LjI4NSAxMi4zNTVMMC42OTggNy43NjlMMi43ODggNS42NzlMNS4yODUgOC4xODNMMTIuNTgyIDAuODc3TDE0LjY3MiAyLjk2OUw1LjI4NSAxMi4zNTVaIiBmaWxsPSIjMkQ2QzMwIi8+PC9zdmc+');
+  --icon-invalid-v2: url('data:image/svg+xml;base64,PHN2ZyBpZD0iU3ZnanNTdmcxMDAxIiB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c3ZnanM9Imh0dHA6Ly9zdmdqcy5jb20vc3ZnanMiIHZpZXdCb3g9IjAgMCAyNSAyNSI+PGRlZnMgaWQ9IlN2Z2pzRGVmczEwMDIiLz48ZyBpZD0iU3ZnanNHMTAwOCI+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxLjczNyAxLjczNyIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1Ij48cGF0aCBkPSJNMS4yODggMS4zOThjLTAuMDIzIDAgLTAuMDQ4IC0wLjAwOCAtMC4wNjcgLTAuMDI3TDAuODQ3IDAuOTk3IDAuNDcyIDEuMzcyYy0wLjAzOCAwLjAzOCAtMC4wOTcgMC4wMzggLTAuMTMzIDBzLTAuMDM4IC0wLjA5NyAwIC0wLjEzM0wwLjcxIDAuODYzIDAuMzM1IDAuNDg4Yy0wLjAzOCAtMC4wMzggLTAuMDM4IC0wLjA5NyAwIC0wLjEzMyAwLjAzOCAtMC4wMzggMC4wOTcgLTAuMDM4IDAuMTMzIDBMMC44NDMgMC43MjhsMC4zNzUgLTAuMzc1YzAuMDM4IC0wLjAzOCAwLjA5NyAtMC4wMzggMC4xMzMgMCAwLjAzOCAwLjAzOCAwLjAzOCAwLjA5NyAwIDAuMTMzTDAuOTggMC44NjNsMC4zNzUgMC4zNzVjMC4wMzggMC4wMzggMC4wMzggMC4wOTcgMCAwLjEzMyAtMC4wMTggMC4wMTggLTAuMDQgMC4wMjcgLTAuMDY3IDAuMDI3eiIgZmlsbD0iIzkyMDAwMCIgY2xhc3M9ImNvbG9yMDAwIHN2Z1NoYXBlIi8+PC9zdmc+PC9nPjwvc3ZnPg==');
+  --icon-caret-down: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3OCA0OC43NSI+CiAgPHBhdGggZD0iTTM5LDI3Ljc5LDEwLjczLDAsMCwxMC4yNCwzOSw0OC43NSw3OCwxMC4yNCw2Ny4yOCwwWiIgc3R5bGU9ImZpbGw6IzAwMCIvPgo8L3N2Zz4=');
   --icon-checked: url("data:image/svg+xml,%3Csvg width='1em' height='1em' viewBox='0 0 16 16' class='bi bi-check' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z'/%3E%3C/svg%3E");
-  --icon-chevron-up: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='chevron-down' class='svg-inline--fa fa-chevron-down fa-w-14' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23000' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'%3E%3C/path%3E%3C/svg%3E");
+  /* End of SVG Icons */
 
   font-family: var(--root-font-family-roboto);
   font-weight: var(--font-weight-regular);
@@ -105,240 +193,498 @@ body {
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-body-large);
   color: var(--text-primary-color);
-  background-color: var(--black);
 }
 
-/* Header && Footer */
+/* Typography V2 */
 
-.app-header-custom {
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--alto);
+.uac-custom-h1-v2,
+.uac-custom-h2-v2,
+.uac-custom-h3-v2,
+.uac-custom-h1-subtitle,
+.uac-custom-h4-v2 {
+  font-family: var(--root-font-family-oswald);
 }
 
-.app-footer-custom {
-  align-items: center;
-  justify-content: center;
-  background-color: var(--footer-bgk-color);
-  color: var(--text-light-color);
+.uac-custom-h1-v2 {
+  line-height: var(--line-height-h1-v2);
+  font-weight: var(--font-weight-medium-v2);
 }
 
-/* End of Header && Footer */
-
-/* Typography */
-
-.uac-custom-h1,
-.uac-custom-h2,
-.uac-custom-h3 {
-  font-family: var(--root-font-family-knockout);
+.uac-custom-h1-subtitle {
+  font-size: var(--font-size-h1-subtitle);
+  line-height: var(--line-height-h1-subtitle);
+  font-weight: var(--font-weight-medium-v2);
 }
 
-.uac-custom-h1 {
-  line-height: var(--line-height-h1);
+.uac-custom-h2-v2 {
+  font-size: var(--font-size-h2-v2);
+  line-height: var(--line-height-h2-v2);
+  font-weight: var(--font-weight-medium-v2);
 }
 
-.uac-custom-h2 {
-  font-size: var(--font-size-h2);
-  line-height: var(--line-height-h2);
+.uac-custom-h3-v2 {
+  font-size: var(--font-size-h3-v2);
+  line-height: var(--line-height-h3-v2);
+  font-weight: var(--font-weight-medium-v2);
 }
 
-.uac-custom-h3 {
-  font-size: var(--font-size-h3);
-  line-height: var(--line-height-h2);
+.uac-custom-h4-v2 {
+  font-size: var(--font-size-h4-v2);
+  line-height: var(--line-height-h4-v2);
+  font-weight: var(--font-weight-medium-v2);
 }
 
-.uac-custom-body-primary-bold,
-.uac-custom-body-primary-medium,
-.uac-custom-body-primary-regular,
-.uac-custom-body-large-bold,
-.uac-custom-body-large-regular,
-.uac-custom-footer {
+.uac-custom-body-primary-small-v2,
+.uac-custom-body-primary-bold-v2,
+.uac-custom-body-primary-medium-v2,
+.uac-custom-body-primary-regular-v2,
+.uac-custom-body-large-bold-v2,
+.uac-custom-body-large-regular-v2,
+.uac-custom-footer-v2,
+.uac-custom-body-large-bold-span-v2,
+.uac-custom-body-large-regular-span-v2 {
   font-family: var(--root-font-family-roboto);
 }
 
-.uac-custom-body-primary-bold,
-.uac-custom-body-primary-medium,
-.uac-custom-body-primary-regular {
-  font-size: var(--font-size-body-primary);
-  line-height: var(--line-height-h3);
+.uac-custom-body-primary-bold-v2,
+.uac-custom-body-primary-medium-v2,
+.uac-custom-body-primary-regular-v2 {
+  font-size: var(--font-size-body-primary-v2);
+  line-height: var(--line-height-h3-v2);
 }
 
-.uac-custom-body-primary-bold {
-  font-weight: var(--font-weight-bold);
+.uac-custom-small-text-size-container .uac-custom-body-primary-small-v2 {
+  font-size: var(--font-size-body-small-v2);
+  line-height: var(--line-height-body-primary-small-v2);
 }
 
-.uac-custom-body-primary-medium {
-  font-weight: var(--font-weight-medium);
+.uac-custom-body-primary-small-bold-v2 {
+  font-size: var(--font-size-body-small-v2);
+  font-weight: var(--font-weight-bold-v2);
 }
 
-.uac-custom-body-primary-regular {
-  font-weight: var(--font-weight-regular);
+.uac-custom-body-primary-bold-v2 {
+  font-weight: var(--font-weight-bold-v2);
 }
 
-.uac-custom-body-large-regular,
-.uac-custom-body-large-bold {
-  font-size: var(--font-size-body-large);
+.uac-custom-body-primary-medium-v2 {
+  font-weight: var(--font-weight-medium-v2);
 }
 
-.uac-custom-body-large-bold {
-  font-weight: var(--font-weight-bold);
+.uac-custom-body-primary-regular-v2 {
+  font-weight: var(--font-weight-regular-v2);
 }
 
-.uac-custom-footer {
-  font-size: var(--font-size-footer);
-  font-weight: var(--font-weight-regular);
+.uac-custom-body-primary-regular-v2 span p > b {
+  font-weight: var(--font-weight-bold-v2);
+}
+
+.uac-custom-body-large-regular-v2,
+.uac-custom-body-large-bold-v2,
+.uac-custom-body-large-bold-span-v2,
+.uac-custom-body-large-regular-span-v2,
+p.uac-custom-body-large-regular-v2 > a.uac-custom-subheader-link-v2 {
+  font-size: var(--font-size-body-large-v2);
+}
+
+.uac-custom-body-large-bold-v2,
+.uac-custom-body-large-bold-span-v2 {
+  font-weight: var(--font-weight-bold-v2);
+}
+
+.uac-custom-bold {
+  font-weight: var(--font-weight-bold-medium-v2);
+}
+
+.uac-custom-footer-v2 {
+  font-size: var(--font-size-footer-v2);
+  font-weight: var(--font-weight-bold-v2);
+  line-height: var(--line-height-small-v2);
   letter-spacing: 0;
+  text-align: start;
+}
+
+.uac-custom-success-text-v2 {
+  color: var(--text-success-color);
+}
+
+.uac-custom-error-text-v2 {
+  color: var(--text-error-color);
+}
+
+.uac-custom-required-text-v2 {
+  color: var(--form-controls-required-color-v2);
+}
+
+.uac-custom-invalid-text-v2 {
+  color: var(--text-error-color);
+  font-size: var(--font-size-body-primary-v2);
+  text-align: start;
+}
+
+.uac-custom-error-text-small-v2 {
+  color: var(--text-error-color);
+  font-size: var(--font-size-body-small);
+  text-align: start;
+}
+
+.uac-custom-disabled-text-v2 {
+  color: var(--text-disabled-color-v2);
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 768px) {
-  .uac-custom-h1 {
-    font-size: var(--font-size-h1);
+  .uac-custom-h1-v2 {
+    font-size: var(--font-size-h1-v2);
   }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
-  .uac-custom-h1 {
-    font-size: var(--font-size-h2);
+  .uac-custom-h1-v2 {
+    font-size: var(--font-size-h1-mobile-v2);
+    line-height: var(--line-height-h1-mobile-v2);
+  }
+
+  .uac-custom-h2-v2 {
+    font-size: var(--font-size-h2-mobile-v2);
+    line-height: var(--line-height-h2-mobile-v2);
+  }
+
+  .uac-custom-card-subtitle-v2 .uac-custom-card-subtitle-text,
+  .uac-custom-address-verification-container
+    .uac-custom-address-verification-subheader {
+    font-size: var(--font-size-h4-v2);
+    line-height: var(--line-height-h4-v2);
   }
 }
 
-/* End of Typography */
+.uac-custom-body-large-bold-v2,
+.uac-custom-body-large-bold-span-v2 {
+  font-weight: var(--font-weight-bold-v2);
+}
 
-/* Button */
+.uac-custom-bold {
+  font-weight: var(--font-weight-bold-medium-v2);
+}
 
-.uac-custom-btn,
-.uac-custom-btn:active,
-.uac-custom-btn:focus,
-.uac-custom-btn:hover,
-.uac-custom-btn:not(:disabled):not(.disabled):active,
-.uac-custom-btn:not(:disabled):not(.disabled):active:focus {
+/* End of Typography V2*/
+
+/* Header & Footer */
+
+.app-header-custom {
+  border-bottom: 1px solid var(--alto);
+}
+
+.app-footer-custom-v2 {
+  background-color: var(--footer-bgk-color);
+  color: var(--footer-text-color);
+}
+
+/* End of Header & Footer */
+
+/* Buttons V2*/
+.uac-custom-btn-lg-v2,
+.uac-custom-btn-lg-v2:active,
+.uac-custom-btn-lg-v2:focus,
+.uac-custom-btn-lg-v2:hover,
+.uac-custom-btn-lg-v2:not(.disabled):active,
+.uac-custom-btn-lg-v2:not(.disabled):active:focus {
   font-family: var(--root-font-family-roboto);
-  font-size: var(--font-size-btn-medium);
+  font-size: var(--font-size-btn-large-v2);
+  font-weight: var(--font-weight-bold-medium-v2);
   background-image: none;
-  border-radius: 5px;
+  border-radius: 0px;
   box-shadow: none;
   --webkit-box-shadow: none;
   cursor: pointer;
   outline: 0;
 }
 
-.uac-custom-btn:not(.uac-dialog-button-custom) {
-  height: 54px;
-  font-size: 17px;
-  line-height: 22px;
+.uac-custom-btn-md-v2,
+.uac-custom-btn-md-v2:active,
+.uac-custom-btn-md-v2:focus,
+.uac-custom-btn-md-v2:hover,
+.uac-custom-btn-md-v2:not(.disabled):active,
+.uac-custom-btn-md-v2:not(.disabled):active:focus {
+  font-family: var(--root-font-family-roboto);
+  font-size: var(--font-size-btn-medium-v2);
+  font-weight: var(--font-weight-bold-medium-v2);
+  background-image: none;
+  border-radius: 0px;
+  box-shadow: none;
+  --webkit-box-shadow: none;
+  cursor: pointer;
+  outline: 0;
 }
 
-.uac-custom-btn:disabled {
+.uac-custom-btn-primary-v2,
+.uac-custom-btn-dark-v2,
+.uac-custom-btn-light-blue-v2 {
+  text-transform: uppercase;
+}
+
+.uac-custom-btn-primary-v2,
+.uac-custom-btn-primary-v2:visited,
+.uac-custom-btn-primary-v2:focus,
+.uac-custom-btn-dark-v2:active,
+.uac-custom-btn-primary-v2:hover,
+/* Removing the next 2 selectors will cause default Bootstrap button styles take precedence:
+- blue outline and box-shadow will be added to the button when clicked
+- button color also becomes blue 
+regradless of the already set colors for active/focused buttons */
+.uac-custom-btn-dark-v2:not(.disabled):active,
+.uac-custom-btn-dark-v2:not(.disabled):active:focus {
+  background-color: var(--button-primary-bkg-color);
+  border: 1px solid var(--button-primary-border-color);
+  color: var(--text-primary-color);
+  -webkit-tap-highlight-color: var(--button-dark-bkg-color);
+}
+
+/* this is needed in order to fix the issue where the loader is not changing colors when hover is not active anymore once the button was pressed */
+.uac-custom-btn-primary-v2:focus .uac-custom-loader-v2 .g__loader--light {
+  background-color: var(--loader-color-dark);
+}
+
+.uac-custom-btn-primary-v2:focus-visible
+  .uac-custom-loader-v2
+  .g__loader--light {
+  background-color: var(--loader-color-dark);
+}
+
+.uac-custom-btn-primary-v2:hover .uac-custom-loader-v2 .g__loader--light {
+  background-color: var(--loader-color-dark);
+}
+
+.uac-custom-btn-dark-v2 .uac-custom-loader-v2 .g__loader--dark {
+  background-color: var(--loader-color-light);
+}
+
+.uac-custom-btn-dark-v2:focus-visible .uac-custom-loader-v2 .g__loader--dark {
+  background-color: var(--loader-color-light);
+}
+
+.uac-custom-btn-primary-v2:focus-visible {
+  background-color: var(--button-primary-bkg-color);
+  border: 1px solid var(--button-primary-border-color);
+  outline: 2px solid var(--button-primary-border-color);
+  color: var(--text-primary-color);
+}
+
+.uac-custom-btn-dark-v2.btn.btn-dark:focus-visible {
+  background-color: var(--button-primary-bkg-color);
+  border: 1px solid var(--button-primary-border-color);
+  color: var(--text-primary-color);
+}
+
+.uac-custom-btn-dark-v2.btn.btn-dark:focus-visible
+  .uac-custom-loader-v2
+  .g__loader--dark {
+  background-color: var(--loader-color-dark);
+}
+
+.uac-custom-btn-dark-v2,
+.uac-custom-btn-dark-v2:visited,
+.uac-custom-btn-primary-v2:active,
+.uac-custom-btn-dark-v2:focus,
+.uac-custom-btn-dark-v2:hover,
+/* Removing the next 2 selectors will cause default Bootstrap button styles take precedence:
+- blue outline and box-shadow will be added to the button when clicked
+- button color also becomes blue 
+regradless of the already set colors for active/focused buttons */
+.uac-custom-btn-primary-v2:not(.disabled):active,
+.uac-custom-btn-primary-v2:not(.disabled):active:focus {
+  background-color: var(--button-dark-bkg-color);
+  border: 1px solid var(--button-dark-border-color);
+  color: var(--text-light-color);
+  -webkit-tap-highlight-color: var(--button-primary-bkg-color);
+}
+
+.uac-custom-btn-primary-v2.disabled,
+.uac-custom-btn-dark-v2.disabled {
+  background-color: var(--button-disabled-bkg-color-v2);
+  border: 1px solid var(--button-disabled-border-color-v2);
+  color: var(--text-primary-color);
   cursor: not-allowed;
-  color: var(--button-disabled-color);
+  opacity: unset;
 }
 
-.uac-custom-btn-disabled-theme {
-  opacity: 0.65;
+.uac-custom-btn-primary-v2.uac-custom-btn-loading-v2.disabled {
+  border: 1px solid var(--button-primary-disabled-border-color-v2);
+  background-color: var(--button-primary-disabled-bkg-color-v2);
 }
 
-.uac-custom-btn-primary,
-.uac-custom-btn-dark {
-  text-transform: capitalize;
-}
-
-.uac-custom-btn-primary,
-.uac-custom-btn-primary:visited,
-.uac-custom-btn-dark:active,
-.uac-custom-btn-dark:focus,
-.uac-custom-btn-dark:hover,
-/* Removing the next 2 selectors will cause default Bootstrap button styles take precedence:
-- blue outline and box-shadow will be added to the button when clicked
-- button color also becomes blue
-regradless of the already set colors for active/focused buttons */
-.uac-custom-btn-dark:not(:disabled):not(.disabled):active,
-.uac-custom-btn-dark:not(:disabled):not(.disabled):active:focus {
-  background-color: var(--green);
-  color: var(--text-light-color);
-  border-radius: 4px;
-}
-
-.uac-custom-btn-dark,
-.uac-custom-btn-dark:visited,
-.uac-custom-btn-primary:active,
-.uac-custom-btn-primary:focus,
-.uac-custom-btn-primary:hover,
-/* Removing the next 2 selectors will cause default Bootstrap button styles take precedence:
-- blue outline and box-shadow will be added to the button when clicked
-- button color also becomes blue
-regradless of the already set colors for active/focused buttons */
-.uac-custom-btn-primary:not(:disabled):not(.disabled):active,
-.uac-custom-btn-primary:not(:disabled):not(.disabled):active:focus {
-  background-color: var(--green);
-  color: var(--text-light-color);
-  border-radius: 4px;
-}
-
-.uac-custom-btn-disabled-theme,
-.uac-custom-btn-primary:disabled,
-.uac-custom-btn-dark:disabled {
-  border: 1px solid var(--button-disabled-border-color);
-}
-
-.uac-custom-btn-disabled-theme,
-.uac-custom-btn-disabled-theme:active,
-.uac-custom-btn-disabled-theme:focus,
-.uac-custom-btn-disabled-theme:hover,
-/* Removing the next 2 selectors will cause default Bootstrap button styles take precedence:
-- blue outline and box-shadow will be added to the button when clicked
-- button color also becomes blue
-regradless of the already set colors for active/focused buttons */
-.uac-custom-btn-disabled-theme:not(:disabled):not(.disabled):active,
-.uac-custom-btn-disabled-theme:not(:disabled):not(.disabled):active:focus,
-.uac-custom-btn-primary:disabled,
-.uac-custom-btn-primary:disabled:focus {
-  background-color: var(--dark-gray-lighter);
-  color: var(--quick-silver-gray);
-}
-
-.uac-custom-btn-dark:disabled,
-.uac-custom-btn-dark:disabled:focus {
-  background-color: var(--button-dark-disabled-bkg-color);
-  color: var(--text-light-color);
-}
-
-.uac-custom-btn-link,
-.uac-custom-btn-link:visited {
-  text-transform: capitalize;
-  color: var(--text-primary-color);
-  background-color: var(--dark-gray);
-  width: 100%;
+.uac-custom-btn-link-v2,
+.uac-custom-btn-link-v2:visited {
+  text-transform: uppercase;
   text-decoration: none;
-}
-
-.uac-custom-btn-link:active,
-.uac-custom-btn-link:focus,
-.uac-custom-btn-link:hover {
   color: var(--text-primary-color);
 }
 
-.uac-card-footer .uac-custom-btn-primary,
-.uac-card-footer .uac-custom-btn-primary:active,
-.uac-card-footer .uac-custom-btn-primary:focus,
-.uac-card-footer .uac-custom-btn-primary:visited {
-    height: 34px;
-    width: 100px;
-    font-size: 13px;
-    line-height: 18px;
+.uac-custom-btn-link-v2:active,
+.uac-custom-btn-link-v2:focus,
+.uac-custom-btn-link-v2:hover {
+  color: var(--text-link-color-v2);
 }
 
-/* End of Button*/
+.uac-custom-btn-light-blue-v2,
+.uac-custom-btn-light-blue-v2:visited,
+.uac-custom-btn-light-blue-v2:hover {
+  background-color: var(--button-light-blue-bkg-color-v2);
+  border: 1px solid var(--button-light-blue-border-color-v2);
+  color: var(--text-primary-color);
+}
+
+.uac-custom-btn-light-blue-v2:active,
+/* Removing the next 3 selectors will cause default Bootstrap button styles take precedence:
+- blue outline and box-shadow will be added to the button when clicked
+- button color also becomes blue 
+regradless of the already set colors for active/focused buttons */
+.uac-custom-btn-light-blue-v2:not(.disabled):active,
+.uac-custom-btn-light-blue-v2:not(.disabled):active:focus,
+.uac-custom-btn-light-blue-v2:not(.disabled):active:focus.btn-primary {
+  background-color: var(--button-primary-bkg-color);
+  border: 1px solid var(--button-light-blue-border-color-v2);
+  color: var(--text-primary-color);
+  -webkit-tap-highlight-color: var(--button-light-blue-bkg-color-v2);
+  box-shadow: none;
+}
+
+.uac-custom-btn-light-blue-v2:focus-visible,
+.uac-custom-btn-light-blue-v2:focus {
+  background-color: var(--button-light-blue-bkg-color-v2);
+  border: 2px solid var(--button-primary-border-color);
+  color: var(--text-primary-color);
+}
+
+.uac-custom-btn-light-blue-v2.disabled:focus-visible {
+  border: 2px solid var(--button-primary-border-color);
+}
+
+.uac-custom-btn-light-blue-v2.disabled,
+.uac-custom-btn-light-blue-v2.disabled:hover {
+  background-color: var(--button-disabled-bkg-color-v2);
+  border: 1px solid var(--button-disabled-border-color-v2);
+  cursor: not-allowed;
+  opacity: unset;
+  color: var(--text-primary-color);
+}
+
+.uac-custom-btn-loading-v2 {
+  background-color: var(--button-dark-bkg-color);
+  border: 1px solid var(--button-dark-border-color);
+}
+
+/* We need to only allow hover effects for devices that support it otherwise on touch devices it'll stick to the button after click*/
+@media (hover: hover) {
+  .uac-custom-btn-dark-v2:hover:not(.disabled) {
+    background-color: var(--button-primary-bkg-color);
+    border: 1px solid var(--button-primary-border-color);
+    color: var(--text-primary-color);
+  }
+
+  /* this is needed in order to fix the issue where the loader is not changing colors when hover is not active anymore once the button was pressed */
+  .uac-custom-btn-primary-v2:hover .uac-custom-loader-v2 .g__loader--light {
+    background-color: var(--loader-color-light);
+  }
+
+  .uac-custom-btn-dark-v2:hover .uac-custom-loader-v2 .g__loader--dark {
+    background-color: var(--loader-color-dark);
+  }
+
+  .uac-custom-btn-primary-v2:hover:not(.disabled) {
+    background-color: var(--button-dark-bkg-color);
+    border: 1px solid var(--button-dark-border-color);
+    color: var(--text-light-color);
+  }
+
+  .uac-custom-btn-link-v2:hover {
+    color: var(--text-link-color-v2);
+    text-decoration: underline;
+  }
+
+  .uac-custom-btn-light-blue-v2:hover:not(.disabled) {
+    background-color: var(--button-primary-bkg-color);
+    border: 1px solid var(--button-light-blue-border-color-v2);
+    color: var(--text-primary-color);
+  }
+}
+
+/*End of Buttons V2*/
+
+/* Toggle Button */
+
+.uac-custom-toggle-btn-group .uac-custom-toggle-btn,
+.uac-custom-toggle-btn-group .uac-custom-toggle-btn:active,
+.uac-custom-toggle-btn-group .uac-custom-toggle-btn:focus,
+.uac-custom-toggle-btn-group .uac-custom-toggle-btn:hover {
+  font-family: var(--root-font-family-roboto);
+  font-size: var(--font-size-btn-medium-v2);
+  font-weight: var(--font-weight-bold-medium-v2);
+  background-image: none;
+  box-shadow: none;
+  --webkit-box-shadow: none;
+}
+
+.uac-custom-toggle-btn-group
+  .uac-custom-toggle-btn.uac-custom-toggle-btn-on.active,
+.uac-custom-toggle-btn-group
+  .uac-custom-toggle-btn-on.btn-primary:not(:disabled):not(.disabled).active,
+.uac-custom-toggle-btn-group
+  .uac-custom-toggle-btn.uac-custom-toggle-btn-on.active:hover,
+.uac-custom-toggle-btn-group
+  .uac-custom-toggle-btn.uac-custom-toggle-btn-on.active:focus:not(:focus-visible),
+.uac-custom-toggle-btn-group
+  .uac-custom-toggle-btn.uac-custom-toggle-btn-on.active:focus {
+  background-color: var(--button-dark-bkg-color);
+  border: 1px solid var(--button-primary-border-color);
+  color: var(--text-light-color);
+  -webkit-tap-highlight-color: var(--button-dark-bkg-color);
+  box-shadow: none;
+}
+
+.uac-custom-toggle-btn-group
+  .uac-custom-toggle-btn.uac-custom-toggle-btn-on.active.btn-primary:focus-visible {
+  background-color: var(--button-primary-bkg-color);
+  border: 1px solid var(--button-primary-border-color);
+  color: var(--text-primary-color);
+  -webkit-tap-highlight-color: var(--button-dark-bkg-color);
+  box-shadow: none;
+}
+
+.uac-custom-toggle-btn-off,
+.uac-custom-toggle-btn-off:active,
+.uac-custom-toggle-btn-off:visited,
+.uac-custom-toggle-btn-off:focus,
+.uac-custom-toggle-btn-off:hover {
+  background-color: var(--button-primary-bkg-color);
+  border: 1px solid var(--toggle-button-border-color);
+  color: var(--text-primary-color);
+  -webkit-tap-highlight-color: var(--button-primary-bkg-color);
+}
+
+.uac-custom-toggle-btn-group .uac-custom-toggle-btn-off.btn-primary:focus,
+.uac-custom-toggle-btn-group
+  .uac-custom-toggle-btn-off.btn-primary:not(:disabled):not(.disabled).active,
+.uac-custom-toggle-btn-group
+  .uac-custom-toggle-btn-off.btn-primary:not(:disabled):not(.disabled):active,
+.uac-custom-toggle-btn-group
+  .uac-custom-toggle-btn-off.show
+  > .btn-primary.dropdown-toggle {
+  background-color: var(--button-primary-bkg-color);
+  border: 1px solid var(--button-primary-border-color);
+  color: var(--text-primary-color);
+  -webkit-tap-highlight-color: var(--button-primary-bkg-color);
+  box-shadow: none;
+}
+
+/* End of Toggle Button */
 
 /* Link */
 
-a.uac-custom-link:link,
-a.uac-custom-link:hover,
-a.uac-custom-link:active,
-a.uac-custom-link:visited {
+a.uac-custom-link-v2 {
   font-family: var(--root-font-family-roboto);
   font-size: var(--font-size-body-primary);
   font-weight: var(--font-weight-regular);
@@ -346,192 +692,106 @@ a.uac-custom-link:visited {
   text-decoration: underline;
 }
 
-a.uac-custom-link:link {
+a.uac-custom-link-v2:link {
   color: var(--text-primary-color);
 }
 
-a.uac-custom-link:visited {
-  color: var(--text-link-visited-color);
+a.uac-custom-link-v2:visited {
+  color: var(--text-link-visited-color-v2);
 }
 
-a.uac-custom-link:hover,
-a.uac-custom-link:active {
-  color: var(--text-link-color);
+a.uac-custom-link:focus-visible {
+  outline: 2px solid var(--button-primary-border-color);
+}
+
+a.uac-custom-link-v2:hover,
+a.uac-custom-link-v2:active {
+  color: var(--text-link-color-v2);
+}
+
+.uac-custom-subheader-link-v2:link,
+.uac-custom-subheader-link-v2:hover,
+.uac-custom-subheader-link-v2:active,
+.uac-custom-subheader-link-v2:visited {
+  font-family: var(--root-font-family-roboto);
+  font-size: var(--font-size-body-large);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-regular);
+  text-decoration: underline;
+}
+
+.uac-custom-subheader-link-v2:link {
+  color: var(--text-primary-color);
+}
+
+.uac-custom-subheader-link-v2:visited {
+  color: var(--text-link-visited-color-v2);
+}
+
+.uac-custom-subheader-link-v2:hover,
+.uac-custom-subheader-link-v2:active {
+  color: var(--text-link-color-v2);
+}
+
+.uac-custom-customer-support-link:link,
+.uac-custom-customer-support-link:hover,
+.uac-custom-customer-support-link:active,
+.uac-custom-customer-support-link:visited {
+  font-size: var(--font-size-body-large-v2);
+}
+
+.uac-custom-footer-v2 {
+  font-size: var(--font-size-footer-v2);
+  font-weight: var(--font-weight-bold-v2);
+  line-height: var(--line-height-small-v2);
+  letter-spacing: 0;
+  text-align: start;
+}
+
+a.uac-custom-customer-support-link:focus-visible {
+  outline: 2px solid var(--button-primary-border-color);
+}
+
+a.uac-custom-tc-link:link,
+a.uac-custom-tc-link:hover,
+a.uac-custom-tc-link:active,
+a.uac-custom-tc-link:visited {
+  font-size: var(--font-size-body-large-v2);
+}
+
+a.uac-custom-tc-link:focus-visible {
+  outline: 2px solid var(--button-primary-border-color);
 }
 
 /* End of Link */
 
-/* Spinner */
+/* --- Form Controls V2--- */
 
-.uac-custom-spinner,
-.uac-custom-spinner-dark {
-  color: var(--white);
+.uac-custom-form-control-container-v2 {
+  text-align: start;
 }
 
-.uac-custom-spinner .uac-custom-spinner-child::before,
-.uac-custom-spinner-dark .uac-custom-spinner-child::before {
-  background-color: var(--white);
-}
-
-.uac-custom-spinner-light {
-  color: var(--text-light-color);
-}
-
-.uac-custom-spinner-light .uac-custom-spinner-child::before {
-  background-color: var(--white);
-}
-/* End of Spinner*/
-
-/* --- Form Controls --- */
-
-.uac-custom-form-control-container {
-  text-align: left;
-}
-
-.uac-custom-label {
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-label-medium);
+.uac-custom-label-v2 {
+  font-weight: var(--font-weight-bold-v2);
+  font-size: var(--font-size-label-large-v2);
   color: var(--text-primary-color);
   line-height: var(--line-height-label);
 }
 
-.required {
-  color: var(--required-color);
-}
-
-.error {
-  color: var(--error-color);
-  font-size: var(--font-size-body-small);
-  text-align: left;
-}
-
-/* Checkbox */
-
-.uac-custom-checkbox > .uac-custom-label::before {
-  border: 2px solid var(--form-control-checkbox-border-color);
-  background-color: var(--white);
-}
-
-.uac-custom-checkbox
-  > .uac-custom-checkbox-input:focus
-  + .uac-custom-label::before {
-  box-shadow: 0 0 0.5em 0 var(--form-control-checkbox-focus-color);
-  border-color: var(--form-control-checkbox-border-color);
-}
-
-.uac-custom-checkbox
-  > .uac-custom-checkbox-input:checked
-  + .uac-custom-label::before {
-  background-image: var(--icon-checked);
-  border-color: var(--form-control-checkbox-border-color);
-  background-color: var(--form-control-checkbox-checked-bkg-color);
-}
-
-.uac-custom-checkbox.invalid-field > .uac-custom-label {
+.uac-custom-make-payment-label {
+  font-weight: var(--font-weight-bold-medium-v2);
+  font-size: var(--font-size-medium-v2);
   color: var(--text-primary-color);
+  line-height: var(--line-height-label);
 }
 
-.uac-custom-checkbox.disabled > .uac-custom-label,
-.uac-custom-checkbox.disabled > .uac-custom-label::before {
-  cursor: not-allowed;
-  color: var(--form-control-checkbox-disabled-color);
-  border-color: var(--form-control-checkbox-disabled-color);
-}
+/* Select Form Control */
 
-/* End of Checkbox*/
-
-/* Input */
-
-.uac-custom-input {
-  border-radius: 0;
-  outline: 0;
-  border: 1px solid var(--form-controls-border-color);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-body-large);
-  background-color: var(--form-controls-background-color);
-  color: var(--text-primary-color);
-}
-
-.uac-custom-input:active,
-.uac-custom-input:focus {
-  color: var(--text-primary-color);
-  border: 1px solid var(--form-controls-border-color);
-  box-shadow: none;
-  background-color: var(--form-controls-background-color);
-}
-
-.uac-custom-input.invalid-field {
-  border: 1px solid var(--error-color);
-}
-
-.uac-custom-input.invalid-field:focus {
-  box-shadow: 0 0 0 0.2rem var(--form-controls-invalid-focus-color);
-}
-
-.uac-custom-input.disabled,
-.uac-custom-input.disabled:focus {
-  cursor: not-allowed;
-  border: 1px solid var(--form-controls-border-color);
-  color: var(--form-controls-disabled-text-color);
-  background-color: var(--form-controls-background-color);
-}
-
-/* End of Input */
-
-/* Phone Number Input */
-/* used react-phone-input libary for building out phone input */
-/* styling for react-phone-input: https://gitlab.com/catamphetamine/react-phone-number-input#css */
-
-.uac-custom-phone-input .PhoneInputInput {
-  border-radius: 0;
-  outline: 0;
-  border: 1px solid var(--form-controls-border-color);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-body-large);
-  background-color: var(--form-controls-background-color);
-  color: var(--text-primary-color);
-}
-
-.uac-custom-phone-input .PhoneInputInput:active,
-.uac-custom-phone-input .PhoneInputInput:focus,
-.uac-custom-phone-input .PhoneInputCountrySelect:active,
-.uac-custom-phone-input .PhoneInputCountrySelect:focus {
-  color: var(--text-primary-color);
-  border: 1px solid var(--black);
-  box-shadow: none;
-  background-color: var(--form-controls-background-color);
-}
-
-.uac-custom-phone-input.invalid-field .PhoneInputInput {
-  border: 1px solid var(--error-color);
-}
-
-.uac-custom-phone-input.invalid-field:focus > .PhoneInputInput {
-  box-shadow: 0 0 0 0.2rem var(--form-controls-invalid-focus-color);
-}
-
-.uac-custom-phone-input.disabled .PhoneInputCountrySelect[disabled] {
-  cursor: not-allowed;
-  color: var(--form-controls-disabled-text-color);
-}
-
-.uac-custom-phone-input.disabled .PhoneInputInput,
-.uac-custom-phone-input.disabled:focus .PhoneInputInput {
-  cursor: not-allowed;
-  border: 1px solid var(--form-controls-border-color);
-  color: var(--form-controls-disabled-text-color);
-  background-color: var(--form-controls-background-color);
-}
-/* End of Phone Number Input */
-
-/* Select */
-
-.uac-custom-select-wrapper::after {
+.uac-custom-select-wrapper-v2::after {
   background-image: var(--icon-caret-down);
-  color: var(--white);
 }
 
-.uac-custom-select {
+.uac-custom-select-v2 {
   border: 1px solid var(--form-controls-border-color);
   border-radius: 0;
   outline: 0;
@@ -542,292 +802,527 @@ a.uac-custom-link:active {
   font-size: var(--font-size-body-large);
 }
 
-.uac-custom-select:active,
-.uac-custom-select:focus {
+.uac-custom-select-v2:active,
+.uac-custom-select-v2:focus {
   color: var(--text-primary-color);
-  border: 1px solid var(--form-controls-border-color);
+  border: 1px solid var(--black);
   box-shadow: none;
   background-color: var(--form-controls-background-color);
 }
 
-.uac-select.invalid-field,
-.uac-select.invalid-field:focus {
+.uac-custom-select-v2.invalid-field,
+.uac-custom-select-v2.invalid-field:focus {
   background-image: none;
-  border: 1px solid var(--error-color);
+  border: 1px solid var(--form-controls-required-color-v2);
 }
 
-.uac-select.invalid-field:focus {
-  box-shadow: 0 0 0 0.2rem var(--form-controls-invalid-focus-color);
+.uac-custom-select-v2.invalid-field:focus {
+  box-shadow: none;
+  border: 1px solid var(--form-controls-invalid-focus-color-v2);
 }
 
-.uac-custom-select > .placeholder {
+.uac-custom-select-v2 > .placeholder {
   color: var(--form-controls-disabled-text-color);
 }
 
-.uac-custom-select.disabled,
-.uac-custom-select:disabled,
-.uac-custom-select.disabled:focus {
+.uac-custom-select-v2.disabled,
+.uac-custom-select-v2:disabled,
+.uac-custom-select-v2.disabled:focus {
+  cursor: not-allowed;
+  border: 1px solid var(--form-controls-border-color-v2);
+  color: var(--form-controls-disabled-text-color);
+  background-color: var(--form-controls-background-color-v2);
+}
+
+.uac-custom-select-loader-v2 {
+  background-color: var(--form-controls-background-color);
+}
+
+/* End of Select Form Control */
+
+/* Uac Input With Dropdown */
+
+.uac-custom-dropdown-chevron {
+  background-image: var(--icon-chevron-down-grey-v2);
+  rotate: 270deg;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.uac-custom-dropdown-chevron:hover,
+.uac-custom-dropdown-chevron:active,
+.uac-custom-dropdown-chevron:focus,
+.uac-custom-dropdown-chevron:not(:disabled):not(.disabled):active,
+.uac-custom-dropdown-chevron:not(:disabled):not(.disabled):active:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.uac-custom-dropdown-description {
+  color: var(--form-controls-input-with-dropdown-selection-color);
+}
+
+.uac-custom-dropdown-list-group {
+  font-family: var(--root-font-family-roboto);
+  font-weight: var(--font-weight-regular);
+  background-color: white;
+  box-shadow: 0px 0px 25px rgb(0 0 0 / 8%);
+  list-style-type: none;
+  border: 1px solid var(--form-controls-border-color);
+}
+
+button.uac-custom-dropdown-list-group-item-highlight:hover,
+button.uac-custom-dropdown-list-group-item-highlight:active,
+button.uac-custom-dropdown-list-group-item-highlight:focus,
+/* Removing the next 2 selectors will cause default Bootstrap button styles take precedence:
+- blue outline and box-shadow will be added to the button when clicked
+- button color also becomes blue 
+regradless of the already set colors for active/focused buttons */
+button.uac-custom-dropdown-list-group-item-highlight:not(:disabled):not(.disabled):active,
+button.uac-custom-dropdown-list-group-item-highlight:not(:disabled):not(.disabled):active:focus {
+  background-color: var(--light-alto);
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+button.uac-custom-dropdown-list-group-item-highlight.active {
+  background-color: var(--light-alto);
+  color: var(--black);
+}
+
+button.uac-custom-dropdown-list-group-item-highlight:hover {
+  background-color: var(--light-alto);
+}
+
+button.uac-custom-list-group-item {
+  border: none;
+}
+
+.uac-custom-dropdown-list {
+  border: 1px solid var(--form-controls-border-color);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body-large);
+  background-color: var(--form-controls-background-color);
+}
+
+/* End of Uac Input With Dropdown */
+
+/* End of Form Controls V2 */
+
+/* Checkbox V2 */
+
+.uac-custom-checkbox-v2 > .uac-custom-checkbox-label-v2::before {
+  border: 2px solid var(--form-controls-checkbox-border-color);
+  background-color: var(--form-controls-background-color);
+}
+
+.uac-custom-checkbox-disabled-v2
+  > .uac-custom-checkbox-label-disabled-v2::before {
+  border: 2px solid var(--form-controls-checkbox-border-color);
+  background-color: var(--form-controls-disabled-color-v2);
+}
+
+.uac-custom-checkbox-v2
+  > .uac-custom-checkbox-input-v2:focus
+  + .uac-custom-checkbox-label-v2::before {
+  box-shadow: 0 0 0.5em 0 var(--form-controls-checkbox-focus-color);
+  border-color: var(--form-controls-checkbox-border-color);
+}
+
+.uac-custom-checkbox-v2
+  > .uac-custom-checkbox-input-v2:checked
+  + .uac-custom-checkbox-label-v2::before {
+  background-image: var(--icon-checked);
+  border-color: var(--form-controls-checkbox-border-color);
+  background-color: var(--form-controls-checkbox-checked-bkg-color);
+}
+
+.uac-custom-checkbox.invalid-field-v2 > .uac-custom-label-v2 {
+  color: var(--text-primary-color);
+}
+
+.uac-custom-checkbox-v2.disabled-v2 > .uac-custom-checkbox-label-v2,
+.uac-custom-checkbox-v2.disabled-v2 > .uac-custom-checkbox-label-v2::before {
+  cursor: not-allowed;
+  color: var(--dark-grey);
+  border-color: var(--dark-grey);
+}
+
+.uac-custom-checkbox-label-v2 {
+  font-weight: var(--font-weight-medium-v2);
+  font-size: var(--font-size-label-large-v2);
+  color: var(--text-primary-color);
+  line-height: var(--line-height-label);
+}
+
+.uac-custom-checkbox-ambassador-warning-v2 {
+  font-weight: var(--font-weight-medium-v2);
+  font-size: var(--font-size-body-large-v2);
+  color: var(--text-primary-color);
+  line-height: var(--line-height-regular-v2);
+}
+
+/* End of Checkbox V2 */
+
+/* Input V2 */
+
+.uac-custom-input-v2 {
+  border-radius: 0;
+  outline: 0;
+  border: 1px solid var(--form-controls-border-color);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body-large);
+  background-color: var(--form-controls-background-color);
+}
+
+.uac-custom-input-v2:active,
+.uac-custom-input-v2:focus {
+  color: var(--text-primary-color);
+  border: 1px solid var(--black);
+  box-shadow: none;
+  background-color: var(--form-controls-background-color);
+}
+
+.uac-custom-input-v2.invalid-field {
+  border: 1px solid var(--form-controls-required-color-v2);
+}
+
+.uac-custom-input-v2.invalid-field:focus {
+  box-shadow: none;
+  border: 1px solid var(--form-controls-invalid-focus-color-v2);
+}
+
+.uac-custom-input-v2.disabled,
+.uac-custom-input-v2.disabled:focus {
   cursor: not-allowed;
   border: 1px solid var(--form-controls-border-color);
   color: var(--form-controls-disabled-text-color);
   background-color: var(--form-controls-background-color);
 }
 
-.uac-select-spinner {
-  background-color: var(--form-controls-background-color);
+/* End of Input V2 */
+/* --- End of Form Controls V2--- */
+
+/* Spinner V2 */
+
+.uac-custom-spinner-v2,
+.uac-custom-spinner-dark-v2 {
+  color: var(--text-primary-color);
 }
 
-/* End of Select */
-
-/* --- End of Form Controls ---*/
-
-/* Alert */
-
-.uac-custom-alert {
-  font-family: var(--root-font-family-roboto);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-medium);
+.uac-custom-spinner-v2 .uac-custom-spinner-child-v2::before,
+.uac-custom-spinner-dark-v2 .uac-custom-spinner-child-v2::before {
+  background-color: var(--black);
 }
 
-.uac-custom-alert .close:focus {
-  outline: none;
+.uac-custom-spinner-light-v2 {
+  color: var(--text-light-color);
 }
 
-.uac-custom-alert-default {
-  box-shadow: 0 1px 0 var(--alert-default-color);
+.uac-custom-spinner-light-v2 .uac-custom-spinner-child-v2::before {
+  background-color: var(--white);
+}
+
+/* End of Spinner V2 */
+
+/* Cursor Types */
+
+.uac-custom-cursor-type {
+  cursor: pointer;
+}
+
+/* End of Cursor Types */
+
+/* Alert V2 */
+
+.uac-custom-alert-v2 {
+  border-radius: 0rem;
+}
+
+.uac-custom-alert-default-v2 {
   background-color: var(--alert-default-color);
   color: var(--alert-default-text-color);
 }
 
-.uac-custom-alert-info {
+.uac-custom-alert-info-v2 {
   background-color: var(--alert-info-color);
   color: var(--alert-primary-text-color);
-  box-shadow: 0 1px 0 var(--alert-info-color);
 }
 
-.uac-custom-alert-success {
+.uac-custom-alert-success-v2 {
   background-color: var(--alert-success-color);
   color: var(--alert-primary-text-color);
-  box-shadow: 0 1px 0 var(--alert-success-color);
 }
 
-.uac-custom-alert-warning {
+.uac-custom-alert-warning-v2 {
   background-color: var(--alert-warning-color);
   color: var(--alert-primary-text-color);
-  box-shadow: 0 1px 0 var(--alert-warning-color);
 }
 
-.uac-custom-alert-error {
+.uac-custom-alert-error-v2 {
   background-color: var(--alert-error-color);
   color: var(--alert-primary-text-color);
-  box-shadow: 0 1px 0 var(--alert-error-color);
 }
 
-/* End of Alert*/
-
-/* Toast */
-
-.uac-custom-toast-alert {
-  font-size: var(--font-size-body-large);
-}
-
-.uac-custom-toast-alert p {
-  font-weight: var(--font-weight-regular);
-}
-
-/* End of Toast*/
-
-/* Card */
-
-.uac-custom-card-container {
+.uac-custom-alert-content-v2 {
   font-family: var(--root-font-family-roboto);
-  color: var(--card-text-color);
-  border-radius: 5px;
-  background-color: var(--dark-gray);
+  font-weight: var(--font-weight-medium-v2);
+  font-size: var(--font-size-body-small-v2);
+  line-height: var(--line-height-small-v2);
 }
 
-.uac-custom-card-border {
-}
-
-.uac-custom-card-border-selected {
-  border: 2px solid var(--card-selected-border-color);
-}
-
-.uac-custom-card-subtitle {
+.uac-custom-alert-btn-v2 {
   font-family: var(--root-font-family-roboto);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-h3);
+  font-weight: var(--font-weight-bold-v2);
+  font-size: var(--font-size-body-small-v2);
+  line-height: var(--line-height-small-v2);
+  text-transform: uppercase;
+  border: 0rem;
+  height: min-content;
 }
 
-.uac-custom-card-subheader {
+.uac-custom-alert-btn-v2:active,
+.uac-custom-alert-btn-v2:not(.disabled):active,
+.uac-custom-alert-btn-v2:not(.disabled):active:focus,
+.uac-custom-alert-btn-v2:hover,
+.uac-custom-alert-btn-v2:focus,
+.uac-custom-alert-btn-v2:target {
   font-family: var(--root-font-family-roboto);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-body-large);
+  font-weight: var(--font-weight-bold-v2);
+  font-size: var(--font-size-body-small-v2);
+  line-height: var(--line-height-small-v2);
 }
 
-.uac-custom-card-subheader-description {
-  font-size: var(--font-size-medium);
+/* End of Alert V2 */
+
+/* Banner */
+
+.uac-custom-banner-success {
+  background-color: var(--banner-success-color);
+  color: var(--banner-success-text-color);
 }
 
-.uac-custom-card-separator {
-  border-bottom: 1px solid var(--card-border-color);
+.uac-custom-banner-error {
+  background-color: var(--banner-error-color);
+  color: var(--banner-error-text-color);
 }
 
-.uac-custom-card-content {
-  font-family: var(--root-font-family-roboto);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-h3);
+.uac-custom-banner-content,
+.uac-custom-banner .uac-custom-link-v2.uac-custom-banner-link {
+  font-size: var(--font-size-body-small-v2);
 }
 
-/* End of Card */
+/* End of Banner */
 
-/* Dialog*/
+/* Chevron */
 
-.uac-custom-dialog-body {
-  font-family: var(--root-font-family-roboto);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-medium);
+.uac-custom-chevron-down {
+  background-image: var(--icon-chevron-down-v2);
+  width: 15px;
+  font-size: 0.375rem;
 }
 
-.uac-custom-dialog-title {
-  color: var(--black);
+.uac-custom-chevron-up {
+  background-image: var(--icon-chevron-up-v2);
+  width: 15px;
+  font-size: 0.375rem;
 }
 
-/* End of Dialog */
-
-/* List Group */
-
-button.uac-custom-list-group-item:hover,
-button.uac-custom-list-group-item:active,
-button.uac-custom-list-group-item:focus,
-/* Removing the next 2 selectors will cause default Bootstrap button styles take precedence:
-- blue outline and box-shadow will be added to the button when clicked
-- button color also becomes blue
-regradless of the already set colors for active/focused buttons */
-button.uac-custom-list-group-item:not(:disabled):not(.disabled):active,
-button.uac-custom-list-group-item:not(:disabled):not(.disabled):active:focus {
-  background-color: var(--malibu);
-  border: 0;
-  outline: 0;
-  box-shadow: none;
-}
-
-button.uac-custom-list-group-item.active {
-  background-color: var(--green);
-  color: var(--black);
-}
-
-button.uac-custom-list-group-item:hover {
-  background-color: var(--alto);
-}
-
-.uac-custom-list-group {
-  font-family: var(--root-font-family-roboto);
-  font-weight: var(--font-weight-regular);
-  background-color: var(--white);
-}
-
-.app-container {
-  background-color: var(--black);
-}
-
-/* End of List Group */
-
-/* Plan Selection */
-
-.planselection-card .uac-custom-card-content ul:first-child {
-  padding: 0px;
-}
-
-/* End of Plan Selection */
-
-/* Plan Confirm */
-
-.plan-confirm-form-custom .uac-custom-label span {
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-body-large);
-}
-
-.plan-confirm-plan-description-container {
-  font-family: var(--root-font-family-roboto);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-medium);
-  border: 0px;
-  padding-left: 15px;
-}
-
-.plan-confirm-plan-description-container ul:first-child {
-  padding: 0px;
-}
-
-/* End of Plan Confirm */
-
-/* Terms & Conditions */
-
-.silver-border {
-  border: 1px solid var(--silver);
-  border-radius: 2px;
-}
-
-.terms-and-conditions-container-custom {
-  font-size: var(--font-size-medium);
-}
-
-.terms-and-conditions-container-custom h2 {
-  font-size: var(--font-size-body-large);
-  font-weight: var(--font-weight-bold);
-}
-
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Large devices (desktops, 992px and up) */
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 768px) {
-  .terms-and-conditions-container > body > h1 {
-    font-size: var(--font-size-h1);
-  }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 767px) {
-  .terms-and-conditions-container > body > h1 {
-    font-size: var(--font-size-h2);
-  }
-}
-
-.scroll-to-bottom-button-custom:hover,
-.scroll-to-bottom-button-custom:active,
-.scroll-to-bottom-button-custom:focus,
-.scroll-to-bottom-button-custom:not(:disabled):not(.disabled):active,
-.scroll-to-bottom-button-custom:not(:disabled):not(.disabled):active:focus {
+.uac-custom-chevron-button {
+  margin-inline-start: 5px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  border-color: var(--chevron-border-color);
+  background-color: var(--chevron-bkg-color);
   border: none;
   outline: none;
   box-shadow: none;
 }
 
-.scroll-to-bottom-button-custom {
-  background-image: var(--icon-chevron-up);
+.uac-custom-chevron-button:hover,
+.uac-custom-chevron-button:active,
+.uac-custom-chevron-button:focus,
+.uac-custom-chevron-button:not(:disabled):not(.disabled):active,
+.uac-custom-chevron-button:not(:disabled):not(.disabled):active:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* End Of Chevron */
+
+/* Collapsible section */
+
+.uac-custom-collapsible-section.focused {
+  outline: 2px solid var(--button-primary-border-color);
+}
+
+/* End of Collapsible section */
+
+/* Phone Number Input V2 */
+
+.uac-custom-phone-input-v2 .PhoneInputInput {
+  border-radius: 0;
+  outline: 0;
+  border: 1px solid var(--form-controls-border-color);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body-large);
+  background-color: var(--form-controls-background-color);
+}
+
+.uac-custom-phone-input-v2 .PhoneInputCountry {
+  --PhoneInput-color--focus: var(--text-primary-color);
+  --PhoneInputCountryFlag-borderColor--focus: var(--black);
+  --PhoneInputCountrySelectArrow-color--focus: var(--text-primary-color);
+  --PhoneInputCountryFlag-backgroundColor: var(
+    --form-controls-background-color
+  );
+}
+
+.uac-custom-phone-input-v2 .PhoneInputInput:active,
+.uac-custom-phone-input-v2 .PhoneInputInput:focus,
+.uac-custom-phone-input-v2 .PhoneInputCountrySelect:active,
+.uac-custom-phone-input-v2 .PhoneInputCountrySelect:focus {
+  color: var(--text-primary-color);
+  border: 1px solid var(--black);
+  box-shadow: none;
+  background-color: var(--form-controls-background-color);
+}
+
+.uac-custom-phone-input-v2.invalid-field .PhoneInputInput {
+  border: 1px solid var(--form-controls-required-color-v2);
+}
+
+.uac-custom-phone-input-v2.invalid-field:focus > .PhoneInputInput {
+  box-shadow: none;
+  border: 1px solid var(--form-controls-invalid-focus-color-v2);
+}
+
+.uac-custom-phone-input-v2.disabled .PhoneInputCountrySelect[disabled] {
+  cursor: not-allowed;
+  color: var(--form-controls-disabled-text-color);
+}
+
+.uac-custom-phone-input-v2.disabled .PhoneInputInput,
+.uac-custom-phone-input-v2.disabled:focus .PhoneInputInput {
+  cursor: not-allowed;
+  border: 1px solid var(--form-controls-border-color);
+  color: var(--form-controls-disabled-text-color);
+  background-color: var(--form-controls-background-color);
+}
+
+/* End of Phone Number Input V2 */
+
+/* Uac Tooltip V2 */
+
+.uac-custom-tooltip-wrapper-v2:focus-visible {
+  outline: 2px solid var(--button-primary-border-color);
+}
+
+.uac-custom-tooltip-small-font-v2 {
+  font-size: var(--font-size-body-small-v2);
+  font-weight: var(--font-weight-medium-v2);
+}
+
+/* End of Uac Tooltip V2 */
+
+/* Uac Progress Bar */
+
+.uac-custom-progress-bar .bg-custom-progress {
+  background-color: var(--candy-blue);
+}
+
+.uac-custom-progress-bar.progress {
+  background-color: transparent;
+}
+
+/* End of Uac Progress Bar */
+
+/* Icons */
+
+.uac-custom-icon-checkmark {
+  background-image: var(--icon-check-mark-v2);
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 100%;
-  border-color: var(--black);
-  width: 100%;
-  height: 100%;
-  background-color: var(--text-primary-color);
-  background-size: 0.5cm;
 }
 
-.scroll-to-bottom-custom-row {
-  background-color: rgba(0, 0, 0, 0.8);
+.uac-custom-icon-invalid {
+  background-image: var(--icon-invalid-v2);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-p a:active, p a:focus, p a:hover, p a:link, p a:visited {
-  color: var(--white) !important;
+/* End of Icons */
+
+/* Plan Plan Information */
+
+.uac-custom-numbered-list > li::marker {
+  font-size: var(--font-size-body-large);
 }
 
-/* End of Terms & Conditions */
-
-.pull-right {
-    float: right;
+.uac-custom-plan-details.focused {
+  outline: 2px solid var(--button-primary-border-color);
 }
+
+.uac-custom-terms-and-conditions-title.focused {
+  outline: 2px solid var(--button-primary-border-color);
+}
+
+.uac-custom-plan-description-html {
+  font-style: italic;
+  font-size: var(--font-size-body-medium-v2);
+}
+
+/* End of Plan Information */
+
+/* Here Suggestion Cards */
+
+.uac-custom-here-suggestions-option {
+  border: 1px solid var(--here--suggestion-card-border-color);
+}
+
+.uac-custom-here-suggestions-option-required {
+  border: 1px solid var(--form-controls-required-color-v2);
+}
+
+/* End of Here Suggestion Cards */
+
+/* Kicker Flag */
+
+.uac-custom-kicker-text {
+  background-color: var(--aqua-blue);
+  font-family: var(--root-font-family-oswald);
+  font-weight: var(--font-weight-medium-v2);
+  font-size: var(--font-size-body-large-v2);
+  line-height: var(--line-height-medium);
+  letter-spacing: 1.33px;
+  text-transform: uppercase;
+}
+
+.uac-custom-kicker-irregular {
+  border-color: var(--aqua-blue) transparent transparent transparent;
+}
+
+/* End of Kicker Flag */
+
+/* Shared Decorations */
+
+.uac-custom-line-through-decoration {
+  text-decoration: line-through;
+}
+
+/* End of Shared Decorations */
+
+/* Uac SOS Coordination */
+
+.uac-custom-sos-coordination-img {
+  background-color: var(--black);
+}
+
+/* End of Uac SOS Coordination*/
